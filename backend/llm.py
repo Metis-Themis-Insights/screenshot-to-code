@@ -19,9 +19,8 @@ from utils import pprint_prompt
 class Llm(Enum):
     GPT_4_VISION = "gpt-4-vision-preview"
     GPT_4_TURBO_2024_04_09 = "gpt-4-turbo-2024-04-09"
-    GPT_4O_2024_05_13 = "gpt-4o-2024-05-13"
-    GPT_4O_2024_08_06 = "gpt-4o-2024-08-06"
-    GPT_4O_2024_11_20 = "gpt-4o-2024-11-20"
+    GPT_4O = "gpt-4o"
+
     CLAUDE_3_SONNET = "claude-3-sonnet-20240229"
     CLAUDE_3_OPUS = "claude-3-opus-20240229"
     CLAUDE_3_HAIKU = "claude-3-haiku-20240307"
@@ -62,10 +61,10 @@ async def stream_openai_response(
         params["stream"] = True
 
     # Add 'max_tokens' corresponding to the model
-    if model == Llm.GPT_4O_2024_05_13:
+    if model == Llm.GPT_4O:
         params["max_tokens"] = 4096
 
-    if model == Llm.GPT_4O_2024_11_20:
+    if model == Llm.GPT_4O:
         params["max_tokens"] = 16384
 
     if model == Llm.O1_2024_12_17:

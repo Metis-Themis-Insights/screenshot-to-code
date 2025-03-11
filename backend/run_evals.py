@@ -33,7 +33,7 @@ async def main():
 #                 )
 #             else:
 #                 task = generate_code_for_text(
-#                     text=prompt, stack=STACK, model=Llm.GPT_4O_2024_05_13
+#                     text=prompt, stack=STACK, model=Llm.GPT_4O
 #                 )
 #             tasks.append(task)
 

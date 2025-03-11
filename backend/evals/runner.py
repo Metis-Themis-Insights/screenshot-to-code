@@ -51,7 +51,7 @@ async def run_image_evals(
                 )
             else:
                 task = generate_code_for_image(
-                    image_url=data_url, stack=stack, model=Llm.GPT_4O_2024_05_13
+                    image_url=data_url, stack=stack, model=Llm.GPT_4O
                 )
             tasks.append(task)
 

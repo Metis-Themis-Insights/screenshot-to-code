@@ -22,7 +22,7 @@ describe("e2e tests", () => {
   const stacks = Object.values(Stack).slice(0, DEBUG ? 1 : undefined);
   const models = DEBUG
     ? [
-        CodeGenerationModel.GPT_4O_2024_05_13,
+        CodeGenerationModel.GPT_4O,
         // CodeGenerationModel.CLAUDE_3_5_SONNET_2024_06_20,
       ]
     : Object.values(CodeGenerationModel);
